@@ -30,8 +30,8 @@ function startCountdown() {
       clearInterval(timer);
       showToast("Lift off! 🚀");
       document.querySelector("#start-btn").disabled = false;
-    }
-    remainingTime -= 1;
+    } else
+      remainingTime -= 1;
   }, 1000);
 }
 
